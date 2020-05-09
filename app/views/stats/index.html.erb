@@ -1,0 +1,7 @@
+<% @urls.each do |url| %>
+	<h2><%= link_to url.original,url.original %></h2>
+	<h4><%= link_to url.shorten_url,url.shorten_url %></h4>
+	<h6>Total Clicks: <%= url.visit_histories.count %></h6>
+	<h6>Top Countries: <%= comma_seperated(url.top_countries) %></h6>
+	<hr/>
+<% end %>
