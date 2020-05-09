@@ -1,0 +1,7 @@
+<%= form_with url: generate_url_index_path do |form| %>
+  <%= form.text_field :url %>
+  <%= form.submit "Shorten" %>
+<% end %>
+
+<p data-id="show-url">	
+</p>

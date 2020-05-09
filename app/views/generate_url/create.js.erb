@@ -1,0 +1,3 @@
+str = "Here's your short URL! \n\n"
+str += '<%= link_to @url.shorten_url, @url.shorten_url  %>'
+jQuery("[data-id='show-url']").html(str);
